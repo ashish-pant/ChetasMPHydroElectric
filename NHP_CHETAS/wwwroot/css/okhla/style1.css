@@ -1,0 +1,245 @@
+body{
+		font-family: 'Montserrat', sans-serif;
+		color: #333333;
+		font-size: 13px;
+		/*background-color: #fffbee;
+		background-color: #D3D3D3;*/
+		background-color: #f7f7f7;
+	}
+	.head1{
+		font-weight: 600;
+		text-align: center;
+		color:#0b075e;
+		margin-bottom: 30px;
+	}
+	.head2{
+		font-weight: 600;
+		color:#0b075e;
+		margin-bottom: 30px;
+	}
+	.head3{
+		font-weight: 600;
+		color:#0b075e;
+	}
+
+
+	/* ===================== Start Tabpane CSS =====================*/
+
+	/* ========================== End Tabpane CSS ==========================*/
+
+	/*ul.navbar-nav li.active a{
+		color: #0b075e;
+	}*/
+	ul.listH li i {
+		color: #00c9b7;
+	}
+	ul.listH li{
+		line-height:40px;
+	}
+
+	.section1{
+		margin-left: 15px;
+		margin-right: 15px
+	}
+	.section2{
+		padding:50px;
+	}
+	.section3{
+		padding:50px;
+		background-color: #f5f0f0;
+	}
+
+	.footer{
+		/*background-color: #243238; */
+		background-color: rgba(24,112,182,0.9);
+		color: #F8F8FF;
+		padding:10px;
+	    position: fixed !important;
+	    left: 0;
+	    bottom: 0 !important;
+	    width: 100%;
+
+	}
+	.footer a {
+		text-decoration: underline;
+	}
+	/*<!-- Button css -->*/
+	a.btn-outline-info {
+		color: #0b075e;
+		background-color: red !important;
+		background-image: none;
+		border-color: #0b075e !important;
+	}
+	i.fa{
+		color: #00c9b7;
+	}
+	.main-content{
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+	    color: #fff;
+	    background-color: #00c9b7;
+	}
+	.imgGroup .col {
+		margin: 0px !important;
+		padding: 0px !important;
+	}
+	.card-img-top {
+	    width: 100%;
+	    border-top-left-radius: 0px;
+	    border-top-right-radius: 0px;
+	}
+	.table td, .table th{
+		padding: 0.25rem;
+	}
+	.card1{
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+		border-radius: 0px;
+		border:0px;
+	}
+	.card1:hover{
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		border-radius: 0px;
+	}
+	.highcharts-credits {
+	    display: none;
+	}
+	.jumbotron {
+		background-color: transparent;
+	    padding: 3rem 3rem 0rem 3rem;
+	}
+	@media only screen and (max-width: 600px) {
+	  .jumbotron {
+			background-color: transparent;
+		    padding: 3rem 1rem 0rem 1rem;
+		}
+	}
+	.card2 { border-radius: 0px;padding: 0px; }
+	.card2 .card-body { border-radius: 0px;padding: 15px 0px 0px 10px; }
+	@media only screen and (min-width: 600px) {
+		.card2 .card-body p { line-height: 0px; }
+		nav.navbar1 {margin-top: 70px;}
+	}
+	@media only screen and (max-width: 600px) {
+		.navbar-brand img { width: 200px; }
+		nav.navbar1 {margin-top: 55px;}
+	}
+	#demo, #demo2 {
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+	}
+	#demo.carousel .carousel-inner .carousel-item img, #demo.carousel .carousel-inner .carousel-item video{
+		width:100%;
+		height:400px;
+		margin-bottom: 0px;
+	}
+	#demo2.carousel .carousel-inner .carousel-item img{
+		width:100%;
+		height:180px;
+	}
+	.carousel .carousel-inner .carousel-item{
+		border:0px solid #0b075e;
+	}
+	#demo.carousel .carousel-inner .carousel-item{
+		/*background-image: url('../img/bgSlider1.jpg');*/
+		background-color: #ddd;
+	}
+	.carousel .carousel-inner .carousel-item .carousel-caption a{
+		color:#fff;
+		font-weight:400;
+	}
+	.carousel-indicators li{
+			background-color: #0b075e;
+	}
+	.carousel-indicators li.active{
+			background-color: #940000;
+	}
+	.carousel-control-next, .carousel-control-prev{
+		width: 4%;
+		top: 45%;
+		bottom: 45%;
+		opacity: 1;
+		background-color: rgba(148,0,0,0.7);
+	}
+	#demo2 .carousel-control-next, #demo2 .carousel-control-prev{
+		width: 3%;
+		top: 40%;
+		bottom: 40%;
+		background-color: rgba(148,0,0,0.7);
+	}
+	.carousel#shardaDamSlider .carousel-inner .carousel-item img,
+	.carousel#maudhaDamSlider .carousel-inner .carousel-item img,
+	.carousel#sajnamDamSlider .carousel-inner .carousel-item img,
+	.carousel#ghagharaDamSlider .carousel-inner .carousel-item img {
+		width:100%;
+		height: 350px;
+	}
+	.borderLeft {
+		/*border-left: 1px solid #ddd;*/
+		border-left: 1px solid rgba(0,0,0,.2);
+	}
+	hr{
+		border-top: 1px solid rgba(0,0,0,0.2);
+	}
+	.cardContact{
+		border:none;
+		text-align: center;
+	}
+	.cardContact .card-header {
+		border-top-left-radius: 0px;
+		border-top-right-radius: 0px;
+		text-align: center;
+		font-weight: 600;
+		font-size: 16px;
+	}
+	.cardContact i {
+		color: #940000;
+	}
+	.reportTable {
+		border:none;
+	}
+	.reportTable .card-header{
+		border-top-left-radius: 0px;
+		border-top-right-radius: 0px;
+		color: #fff;
+		    background: linear-gradient(to bottom, #344e82, #4133e1) !important;
+		padding: .35rem 0.75rem .25rem 0.75rem;
+		font-weight: 500;
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+	.table-bordered td, .table-bordered th {
+	    border: 1px solid #333333;
+	}
+	nav.bg-light {
+	    background-color: #ddd !important;
+	}
+	.damInfo1 .card-body{
+		border: 1px solid #55c3ef/*#ffbf00*/;
+	}
+	.damInfo1:hover  .card-body{
+		border: 2px dotted linear-gradient(to right, #e2eeee, #cbe4e8, #b6d9e5, #a5cde4, #99c0e3, #8ebee6, #81bce9, #73baec, #51c4ef, #23ceec, #00d7e1, #0dded0);
+		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+
+	}
+	.tableH{
+		background-image: linear-gradient(to right, #e2eeee, #cbe4e8, #b6d9e5, #a5cde4, #99c0e3, #8ebee6, #81bce9, #73baec, #51c4ef, #23ceec, #00d7e1, #0dded0);
+box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+	}
+	.damInfo1 .tableH a{
+		color: #0b075e;
+	}
+	.damInfo1 .tableH a:hover{
+		text-decoration: none;
+	}
+	.damInfo1 .tableH a:hover h6{
+		color: #940000;
+	}
+	#demo .carousel-indicators {
+	    bottom: -3px;
+	}
+	.anychart-credits a {
+	    text-decoration: none;
+	    display: none;
+	}

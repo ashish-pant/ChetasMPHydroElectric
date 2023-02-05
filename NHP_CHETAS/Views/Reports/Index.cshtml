@@ -1,0 +1,87 @@
+﻿@model NHP_CHETAS.Models.ReportMasterData
+@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form action=@Url.Action("GenerateData","Reports") method="post" class="container" style="margin:20px 0 0 0">
+    <div class="row">
+        <span class="col-md-4 form-group">
+            <label>Dam Name</label>
+            <select class="form-control" name="damName">
+                @foreach (var item in Model.lstDamName)
+                {
+                    <option value="@item.Id">@item.Name </option>
+                }
+            </select>
+        </span>
+        <span class="col-md-4 form-group">
+            <label> Report Name</label>
+            <select class="form-control" name="reportType">
+                <option>Discharge</option>
+                <option>Inflow</option>
+                <option>Level</option>
+            </select>
+        </span>
+        <span class="col-md-4 form-group">
+            <label> Start Time</label>
+            <input type="text" placeholder="Select Start Time" class="timepicker form-control" name="startTime" />
+        </span>
+    </div>
+    <div class="row">
+        <span class="col-md-4 form-group">
+            <label>End Time</label>
+            <input type="text" placeholder="Select End Time" class="timepicker form-control" name="endTime" />
+        </span>
+        <span class="col-md-4 form-group">
+            <label></label>
+            <button type="submit" id="generateReport" class="btn btn-primary" style="float: right;margin-top: 27px;"> Review Report</button>
+        </span>
+        @if (Model.damLevelReport.Count() > 1)
+        {
+            <span class="col-md-4 form-group">
+                <label></label>
+                <button type="button" onclick="ExportToExcel('xlsx')" id="downloadReport" class="btn btn-secondary" style="margin-top: 27px;"> Download To Excel</button>
+            </span>
+        }
+    </div>
+</form>
+@if (Model?.damLevelReport?.Count() > 1)
+{
+    <div class="container">
+        <table class="table table-hover" id="tbl_exporttable_to_xls">
+            <thead>
+                <tr>
+                    <th style="font-weight: bold">Date And Time</th>
+                    <th style="font-weight: bold">Capacity</th>
+                    <th style="font-weight: bold">Gross Storage</th>
+                    <th style="font-weight: bold">Live Storage</th>
+                    <th style="font-weight: bold">Pond Level</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model?.damLevelReport)
+                {
+                    <tr>
+                        <td>
+                            @item.lastUpdate
+                        </td>
+                        <td>
+                            @Convert.ToDouble(item.Capcity).ToString("F2")
+                        </td>
+                        <td>
+                            @Convert.ToDouble(item.Gross_Storage).ToString("F2")
+                        </td>
+                        <td>
+                            @Convert.ToDouble(item.Live_Storage).ToString("F2")
+                        </td>
+                        <td>
+                            @Convert.ToDouble(item.Pond_Level_RLT).ToString("F2")
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+}

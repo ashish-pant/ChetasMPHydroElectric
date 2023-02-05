@@ -1,0 +1,245 @@
+body{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+
+}
+.btn1{
+  border:1px solid #0f0a3c;
+  background:transparent;
+  color: #0f0a3c;
+  min-width: 100px;
+  border-radius: 20px;
+}
+.simpleCard1 {
+  border-radius: 0px;
+  box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.simpleCard2{
+  box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.simpleCard2 .card-header {
+  background-color:#fddf85;
+  padding: 5px 15px;
+  font-weight: 600;
+}
+.simpleCard2 .card-body {
+  border-color:#fddf85;
+}
+.cardStyle1{
+  box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
+  margin:0%;
+}
+.cardStyle1 .card-title {
+  border-bottom:1px solid #036ad9;
+  color:#036ad9 !important;
+  vertical-align:middle;
+  text-align:center;
+  padding-top: 10px;
+  text-transform: uppercase;
+}
+.cardStyle1 .card-title h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.cardStyle1 .card-body {
+  padding: 1rem 1rem;
+}
+.page-body-wrapper{
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.form-control {
+  /*height: 30px;
+  padding: .175rem .75rem;*/
+  border-radius: 0px;
+  border: 1px solid #d5dcec;
+}
+.navbar-light .navbar-nav .nav-link {
+    color:#000;
+    /*font-size: 14px;*/
+}
+.col-form-label {
+    padding-top: calc(.375rem + 1px);
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.table tbody tr td{
+  padding: 3px;
+  font-size: 14px;
+}
+.table thead th{
+  padding: 3px;
+  font-size: 14px;
+}
+.table-bordered td, .table-bordered th {
+    border: 1px solid #a3a6aa;
+}
+.table thead th {
+    border-bottom: 1px solid #6c6f73;
+}
+
+.tableBorderNone th,.tableBorderNone tr,.tableBorderNone td {
+  border: none;
+  padding: 0.25rem;
+}
+.card.reportCard {
+  border:1px solid #ddd;
+  margin-bottom: 3rem;
+
+}
+@media screen and (min-width: 768px) {
+  .reportCard {
+    margin: 0% 10%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .reportCard {
+    margin: 0% 1%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .reportCard1 {
+    margin: 0% 6%;
+  }
+  .navbar-brand {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .reportCard1 {
+    margin: 0% 1%;
+  }
+}
+.card.reportCard .card-header {
+  background:linear-gradient(to bottom, #fbc294, #f7913f); padding: 0% 10%;
+}
+
+.cardColor1.card{
+  background: -webkit-gradient(linear, left top, right top, from(#ffbf96), to(#fe7096)) !important;
+  background: linear-gradient(to right,#ffbf96,#fe7096) !important;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+  border: 0px;
+  border-radius: 0px;
+  border-left: 3px solid #fe7096;
+
+}
+.cardColor1 .card-body, .cardColor2 .card-body {
+  padding: 0.50rem;
+  color: #241f1f;
+}
+.cardColor1 .card-body table th, .cardColor2 .card-body table th{
+  font-weight: 500;
+}
+.cardColor1 .cardHead1, .cardColor2 .cardHead1{
+  font-weight: 600;
+}
+
+.cardColor2.card  {
+  background: -webkit-gradient(linear, left top, right top, from(#90caf9), color-stop(99%, #047edf)) !important;
+  background: linear-gradient(to right,#90caf9, #047edf 99%) !important;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+  border: 0px;
+  border-radius: 0px;
+  border-left: 3px solid  #047edf;
+}
+address i {
+  color: #036ad9;
+}
+/* ===================== Weather card CSS Start ===================== */
+.cardcolor1{
+  background-image: linear-gradient(to top, #e0eaf9, #c2ddf8, #9ed1f6, #6fc6f2, #12bceb);
+  padding:3px 9px;
+}
+.cardcolor2{
+  background-image: linear-gradient(to top, #e0eaf9, #c9f3ff, #b8fbf6, #c5ffd7, #effbb4);
+  padding:3px 9px;
+}
+.cardcolor3{
+  background-image: linear-gradient(to top, #e0eaf9, #e8e1f7, #f6d6ea, #ffcdd1, #fbcab4);
+  padding:3px 9px;
+}
+.cardDate{
+  font-size:12px;
+  font-weight: 600;
+}
+.font-weight-bold {
+  font-weight: 700!important;
+}
+.cardHead{
+  text-transform:uppercase;
+  font-size:16px;
+}
+.cardDateTime{
+  font-size:12px;
+}
+.weather-card:hover{
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important;
+}
+@media screen and (min-width: 578px) {
+  .weatherDiv2{
+    text-align: right;
+  }
+}
+/* ===================== End Weather Card CSS ===================== */
+
+/* ======================= Start Footer CSS ======================= */
+   @media screen and (min-width: 572px) {
+     .copyRight .span2{
+       float:right;
+     }
+     .portalFooter {
+       position: fixed;
+       bottom: 0;
+       width: 100%;
+       padding: 0 45px !important;
+     }
+   }
+   @media screen and (max-width: 571px) {
+     .portalFooter p{
+       text-align: center;
+       font-size: 12px;
+     }
+     .portalFooter {
+       padding: 0 10px;
+     }
+     .copyRight{
+       text-align:center;
+       font-size: 12px;
+     }
+   }
+   .portalFooter {
+     /* background-image: linear-gradient(to bottom, #325ea2, #264f9c, #1d4094, #19308b, #1b1f81);color:#fff;color:#ffffff; */
+     padding: 3px;
+     z-index: 10001;
+     min-height: 25px;
+   }
+   .portalFooter p, .portalFooter a {
+     color: #ffffff;
+     margin-bottom: 0px;
+   }
+  .portalFooter a {
+     text-decoration: underline;
+   }
+   /* ========================== End Footer CSS ========================== */
+
+   /* code for units */
+   .input-group-text {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0.5em 0.5rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 0.5;
+    color: #495057;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}

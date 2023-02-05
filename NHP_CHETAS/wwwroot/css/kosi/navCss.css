@@ -1,0 +1,75 @@
+/* .navcontainer{
+			padding:0px;
+		}
+		.dropdown>.dropdown-menu {
+		  top: 200%;
+		  transition: 0.3s all ease-in-out;
+		margin-top:0px;
+		background-image: linear-gradient(to top, #9eedfd, #b2ecfe, #c4ecfd, #d5ecf9, #e2ecf4);
+		padding:0px;
+		font-size: 15px;
+		}
+		.dropdown:hover>.dropdown-menu {
+		  display: block;
+		  top: 100%;
+		}
+
+		.dropdown>.dropdown-toggle:active {
+			pointer-events: none;
+		}
+		nav ul li{
+			padding-right:70px;
+			font-weight:600;
+		}
+		.dropdownbtn{
+			font-weight:600;
+		}
+		ul li a:hover{
+			color: #fff !important;
+			background-image: linear-gradient(to top, #180c4e, #38427c, #647aa5, #9db2cc, #e2ecf4);
+			height:100%;
+		}
+		.dropdownbtn:hover{
+			color: #fff !important;
+			background-image: linear-gradient(to top, #180c4e, #38427c, #647aa5, #9db2cc, #e2ecf4);
+			height:100%;
+		} */
+.navbar-collapse ul li a.nav-link, .navbar ul li a.nav-link {
+	padding: auto 15px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1px !important;
+}
+.navbar-collapse ul li a.nav-link:hover,.navbar-collapse ul li a.dropdown-item.active ,.navbar-collapse ul li.active a.nav-link, .navbar-collapse ul li a.dropdown-item:hover {
+	color: #fff !important;
+	background-image: linear-gradient(to top, #444141, #424444, #424444, #424444, #424444) !important;
+}
+.navbar-collapse ul li a.dropdown-item {
+	padding: .25rem 0.75rem;
+
+}
+/* .dropdown-menu{
+ border:1px solid #180c4e;
+} */
+@media screen and (min-width: 768px) {
+	.topNav .dropdown:hover>.dropdown-menu {
+		display: block;
+		top: 100%;
+	}
+}
+
+.navbar-collapse ul li.dropdown .dropdown-menu {
+	transition: 0.5s all ease-in-out;
+	border-radius: 0px;
+	margin-top: -1px;
+	color: #fff !important;
+	padding: 0px;
+	background-image: linear-gradient(to top, #84abe5, #98bce9, #afcced, #c7ddf0, #e2ecf4);
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0.6rem;
+    padding-left: 0.6rem;
+}
+.adminNm {
+	background-image: linear-gradient(to top, #180c4e, #38427c, #647aa5, #9db2cc, #e2ecf4);
+}
